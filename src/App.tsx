@@ -7,7 +7,7 @@ const App = () => {
   const [isValidEmail, setIsValidEmail] = useState<boolean>(true);
   const [emailaddress, setEmailAddress] = useState<string>('');
 
-  const [showSuccess, setShowSuccess] = useState<boolean>(true);
+  const [showSuccess, setShowSuccess] = useState<boolean>(false);
 
   const validateEmail = (email: string) => {
     return email.match(
