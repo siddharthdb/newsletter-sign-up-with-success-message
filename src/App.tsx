@@ -26,7 +26,7 @@ const App = () => {
   }
 
   return (
-    <div className={`${cmpName}`}>
+    <main className={`${cmpName}`}>
       {showSuccess ? <Success email={emailaddress} onDismiss={() => setShowSuccess(false)}></Success> :
         <div className={`${cmpName}__container`}>
           <div className={`${cmpName}__form`}>
@@ -35,11 +35,11 @@ const App = () => {
               Join 60,000+ product managers receiving monthly updates on:
             </div>
 
-            <div className={`${cmpName}__form-list`}>
+            <ul className={`${cmpName}__form-list`}>
               <li className={`${cmpName}__form-list-item`}>Product discovery and building what matters</li>
               <li className={`${cmpName}__form-list-item`}>Measuring to ensure updates are a success</li>
               <li className={`${cmpName}__form-list-item`}>And much more!</li>
-            </div>
+            </ul>
 
             <div className={`${cmpName}__form-input`}>
               <span className={`${cmpName}__form-input-label`}>
@@ -57,7 +57,7 @@ const App = () => {
           </div>
         </div>
       }
-    </div>
+    </main>
   )
 }
 
