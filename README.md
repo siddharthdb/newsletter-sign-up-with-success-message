@@ -14,3 +14,6 @@ To get started -
 - clone the project
 - run `npm i` to setup `node_modules` folder
 - run `npm run dev` to run in watch mode 
+
+## Live site
+[Newsletter sign-up form with success message](https://newslettersuccessmessage.netlify.app/)
