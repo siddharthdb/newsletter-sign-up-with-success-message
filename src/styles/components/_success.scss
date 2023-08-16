@@ -1,0 +1,71 @@
+$cmp-name: "newsletter-success";
+
+.#{$cmp-name} {
+  padding: 40px 64px 64px 64px;
+  font-family: Roboto;
+  font-style: normal;
+  line-height: 100%;
+  font-size: 16px;
+  color: $dark-navy;
+  width: 354px;
+  border-radius: 36px;
+  background: $white;
+  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+
+  @media #{$sm} {
+    width: auto;
+    border-radius: 0;
+    height: 100vh;
+    padding: 24px;
+  }
+
+  > img {
+    @media #{$sm} {
+      margin-top: 150px;
+    }
+  }
+
+  &-title {
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 40px;
+    @media #{$sm} {
+      font-size: 40px;
+    }    
+  }
+
+  &-message {
+    margin-top: 24px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &-btn-dismiss {
+    background: $dark-navy;
+    border-radius: 8px;
+    margin-top: 40px;
+    color: $white;
+    height: 56px;
+    width: 100%;
+    border: none;
+    line-height: 150%;
+
+    &:hover {
+      background: linear-gradient(225deg, #FF6A3A 0%, #FF527B 100%);
+      box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+    }
+
+    @media #{$sm} {
+      position: absolute;
+      bottom: 0px;
+      margin-bottom: 40px;
+      margin-right: 29px;
+      left: 24px;
+      width: calc(100vw - 48px);
+    } 
+  }
+
+}
